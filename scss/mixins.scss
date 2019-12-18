@@ -1,0 +1,26 @@
+@mixin iphone-se-only {
+  @media (max-width: 321px) {
+    @content;
+  }
+}
+
+@mixin iphone-8 {
+  @media (min-width: 375px) and (max-height: 667px) {
+    @content;
+  }
+}
+
+@mixin iphone-Xs {
+  @media (min-width: 375px) and (min-height: 668px) {
+    @content;
+  }
+}
+
+@mixin iphone-8-plus {
+  @media (min-width: 414px) {
+    @content;
+  }
+}
+
+
+

@@ -1,0 +1,278 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+
+.icon-close {
+  position: fixed;
+  top:10px;
+  right: 21px;
+
+  @include iphone-Xs {
+    top: 56px;
+  }
+  @include iphone-8-plus{
+    top: 10px;
+  }
+}
+
+.wrapper__title {
+  font-family: 'SF Pro Display-Light';
+  font-size: 32px;
+  line-height: normal;
+  color: #333333;
+  text-align: center;
+  margin: 75px 0 32px 0;
+  letter-spacing: 0.05px;
+  @include iphone-8 {
+    margin-top: 134px;
+    margin-bottom: 31px;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.0523077px;
+  }
+  @include iphone-Xs {
+    margin-top: 210px;
+    margin-bottom: 32px;
+  }
+  @include iphone-8-plus {
+    margin-top: 172px;
+    margin-bottom: 31px;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.0523077px;
+  }
+}
+
+.sales-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 13px 13px 29px;
+  border: 1px solid #ee334b;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  align-items: center;
+  @include iphone-8 {
+    padding-right: 14px;
+    align-items: center;
+  }
+  @include iphone-8-plus {
+    padding-right: 14px;
+    align-items: center;
+  }
+
+  .sales-button__title {
+    font-family: 'sf-pro-text_regular';
+    font-size: 16px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.03px;
+    color: #F52E50;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 0 5px 0;
+
+    @include iphone-8 {
+      font-size: 22px;
+      line-height: 20px;
+      letter-spacing: 0.04px;
+      padding: 4px 0 3px 0;
+    }
+    @include iphone-8-plus {
+      font-size: 22px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+    }
+    @include iphone-Xs {
+      font-size: 22px;
+      line-height: 17px;
+      letter-spacing: 0.04px;
+      padding: 4px 0 3px 0;
+    }
+
+    .sales-button__title-small {
+      font-size: 12px;
+      line-height: 17px;
+      text-transform: lowercase;
+      letter-spacing: 0.04px;
+
+      @include iphone-8 {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      @include iphone-Xs {
+        font-size: 14px;
+        line-height: 23px;
+      }
+      @include iphone-8-plus {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+.sales-button-link {
+  background: linear-gradient(270deg, rgba(255, 86, 141, 0.98) 0%, rgba(245, 30, 71, 0.98) 100%);
+  border-radius: 100px;
+  padding: 12px 0;
+  width: 59%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: 'sf-pro-text_regular';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 0.0192px;
+  line-height: 17px;
+  @include iphone-8 {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.0224px;
+    width: 56%;
+    padding: 12px 0;
+  }
+  @include iphone-8-plus {
+    width: 49%;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.0224px;
+  }
+  @include iphone-Xs {
+    width: 56%;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.0224px;
+  }
+}
+
+.subscription-access {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 47px 0;
+  @include iphone-8 {
+    margin-bottom: 95px;
+  }
+  @include iphone-Xs {
+    margin-bottom: 150px;
+  }
+  @include iphone-8-plus {
+    margin-bottom: 130px;
+  }
+
+  .subscription-access-list {
+    font-family: sf-pro-text_regular;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    @include iphone-8-plus {
+      font-size: 17px;
+      line-height: 33px;
+    }
+
+    .subscription-access-list__item {
+      list-style-type: none;
+      line-height: 32px;
+      letter-spacing: -0.65px;
+      @include iphone-8 {
+        font-size: 17px;
+        line-height: 33px;
+        letter-spacing: -0.65px;
+      }
+    }
+
+    .icon-check {
+      font-family: icomoon;
+      content: '\e900';
+    }
+
+    .subscription-access-list__item .icon-check {
+      font-size: 5px;
+      padding: 3px 3px 3px 2.2px;
+      border-radius: 50%;
+      color: #FFFFFF;
+      background-color: #EE334B;
+      margin-right: 10px;
+    }
+  }
+}
+
+.footer-terms-and-conditions {
+  position: sticky;
+  bottom: -120px;
+  font-family: 'sf-pro-text_regular';
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #000000;
+  padding: 12px 0;
+  opacity: 0.56;
+  @include iphone-se-only{
+    padding: 20px 9px;
+  }
+  @include iphone-8{
+    padding: 12px 33px;
+  }
+  @include iphone-Xs {
+    padding-bottom: 33px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top:15px;
+  }
+  @include iphone-8-plus {
+    padding-bottom: 10px;
+    padding-left: 52.5px;
+    padding-right: 52.5px;
+  }
+
+
+  .footer-terms-and-conditions-links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .footer-terms-and-conditions-links__item {
+      list-style-type: none;
+      text-decoration: underline;
+      margin-right: 7px;
+      margin-left: 7px;
+    }
+  }
+}
+
+
+.page-shadow {
+  position: fixed;
+  background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  height: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page-shadow:after {
+  @include iphone-Xs{
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+  }
+}
